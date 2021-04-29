@@ -1,0 +1,580 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+body {
+  /*Fondo de la pagina principal
+    background: #1A1919;*/
+
+    /* FONTS */
+    font-family: 'Roboto',sans-serif;
+    background: #eee;
+
+
+
+}
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration:none;
+
+
+}
+.color{
+background-color: #eee;
+
+
+
+}
+.sidebar{
+  top: 1px;
+  margin: 0px;
+  position:fixed;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: #042331;
+  transition: all .5 ease;
+
+}
+
+.sidebar header{
+
+    font-size: 22px;
+    color:white;
+    text-align: center;
+    line-height: 50px;
+    background: #063146;
+    user-select: none;
+
+  }
+
+.sidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 22px;
+    font-size: 20px;
+    color: white;
+    word-spacing: normal;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255,255,255,.1);
+    border-bottom: 1px solid black;
+    transition:.4s;
+    text-decoration: none;
+}
+.sidebar ul a {
+
+  font-style: normal;
+}
+
+ul li:hover a{
+  padding-left: 50px;
+}
+.sidebar ul a i {
+
+margin-right: 16px;
+
+}
+
+#check{
+
+display: none;
+
+}
+
+label #btn,label #cancel{
+position: absolute;
+cursor: pointer;
+background: #042331;
+border-radius: 3px;
+
+}
+label #btn{
+left: 40px;
+top: 25px;
+font-size: 25px;
+color: white ;
+padding: 4px 9px;
+transition: all .5s;
+
+}
+label #cancel{
+z-index: 1111;
+left: -195px;
+top: 17px;
+font-size: 15px;
+color: #0a5275;
+padding: 4px 9px;
+transition: all .5s ease;
+
+}
+
+#check:checked ~ .sidebar{
+
+left: 0;
+
+}
+#check:checked ~ label #btn{
+
+left: 250px;
+opacity: 0;
+pointer-events: none;
+
+}
+#check:checked ~ label #cancel{
+
+left: 195px;
+
+
+}
+#check:checked ~ section{
+
+  margin-left:250px;
+
+
+}
+
+
+section{
+
+    text-align: center;
+    transition: all .5s;
+
+}
+
+
+.wrapper h1{
+text-align :center;
+height: 100px;
+
+
+}
+.wrapper p{
+    margin: auto;
+    text-align: center;
+    width: 50%;
+    padding: 5px;
+    border: 2.5px solid gray;
+    background-color: #fff;
+
+
+}
+.wrapper-text{
+
+    margin: 0 auto;
+    width: 1100px;
+    text-align: justify;
+    font-size: 17px;
+
+
+}
+.wrapper-text ul{
+
+padding-left: 200px;
+padding-right: 200px;
+
+}
+.wrapper-text ol {
+
+padding-left: 100px;
+color: #3179BA;
+
+}
+
+
+.wrapper-text ul p{
+
+padding-left: 200px;
+
+}
+.wrapper-text p{
+
+padding-left: 200px;
+
+}
+
+.wrapper-text ul li {
+
+list-style: square;
+list-style-position:inside;
+
+}
+
+.title{
+    text-align: center;
+    line-height: 0.5em;
+}
+h2{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+h3{
+    font-size: 25px;
+
+    text-emphasis-color: green;
+    text-decoration-style: wavy;
+    text-align: center;
+
+}
+h4{
+    text-align: center;
+}
+
+
+p{
+    text-align: left;
+    padding-left: 35vh;
+    padding-right: 35vh;
+}
+
+ol{
+    padding-left: 45vh;
+    padding-right: 45vh;
+}
+a {
+
+    text-decoration: none;
+    color: #6D95CE;
+}
+a:hover {
+
+    color: white;
+}
+
+
+.footer{
+    bottom: 0px;
+    right: 0px;
+    width: 400px;
+    height: 100px;
+    position: fixed;
+    bottom: 0;
+}
+.footer ul li {
+    list-style-type: square ;
+
+}
+.back{
+
+  font-size: 18px;
+  text-align:left;
+
+}
+.hiper{
+
+  text-align: left;
+  text-decoration: none;
+  color: #6D95CE;
+
+
+
+}
+div p a{
+
+text-align: right;
+text-decoration: none;
+color: #6D95CE;
+
+}
+div p a:hover{/* hover es para poner un color diferente cuando el usuario
+  pasa el mouse sobre el parrafo*/
+
+color:white;
+
+}
+
+.SGBD{ /* Clase para el titulo de cada SGBD*/
+
+  color: #76B7B4;
+  font-size: 50px;
+  font-family: 'Roboto',sans-serif;
+  font-style: oblique;
+  font-weight: bold;
+
+}
+.subtitulo{
+
+padding-left: 120px;
+color : #3179BA;
+
+}
+
+
+.ul{
+
+  text-align: justify;
+  padding-left: 45vh;
+  padding-right: 35vh;
+}
+
+.Image-Page{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 120%;
+
+}
+/* USER LOGIN MOD */
+
+/* BASIC */
+
+html {
+  background-color: #56baed;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+}
+
+a {
+  color: #92badd;
+  display:inline-block;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+h2 {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  display:inline-block;
+  margin: 40px 8px 10px 8px; 
+  color: #cccccc;
+}
+
+
+
+/* STRUCTURE */
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column; 
+  justify-content: center;
+  width: 100%;
+  min-height: 100%;
+  padding: 20px;
+}
+
+#formContent {
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  background: #fff;
+  padding: 30px;
+  width: 90%;
+  max-width: 450px;
+  position: relative;
+  padding: 0px;
+  -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+  box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+#formFooter {
+  background-color: #f6f6f6;
+  border-top: 1px solid #dce8f1;
+  padding: 25px;
+  text-align: center;
+  -webkit-border-radius: 0 0 10px 10px;
+  border-radius: 0 0 10px 10px;
+}
+
+
+
+/* TABS */
+
+h2.inactive {
+  color: #cccccc;
+}
+
+h2.active {
+  color: #0d0d0d;
+  border-bottom: 2px solid #5fbae9;
+}
+
+
+
+/* FORM TYPOGRAPHY*/
+
+input[type=button], input[type=submit], input[type=reset]  {
+  background-color: #56baed;
+  border: none;
+  color: white;
+  padding: 15px 80px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 13px;
+  -webkit-box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+  box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  margin: 5px 20px 40px 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover  {
+  background-color: #39ace7;
+}
+
+input[type=button]:active, input[type=submit]:active, input[type=reset]:active  {
+  -moz-transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+  -o-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+input[type=text] {
+  background-color: #f6f6f6;
+  border: none;
+  color: #0d0d0d;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px;
+  width: 85%;
+  border: 2px solid #f6f6f6;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+input[type=text]:focus {
+  background-color: #fff;
+  border-bottom: 2px solid #5fbae9;
+}
+
+input[type=text]:placeholder {
+  color: #cccccc;
+}
+
+
+
+/* ANIMATIONS */
+
+/* Simple CSS3 Fade-in-down Animation */
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+/* Simple CSS3 Fade-in Animation */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fadeIn {
+  opacity:0;
+  -webkit-animation:fadeIn ease-in 1;
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+.fadeIn.first {
+  -webkit-animation-delay: 0.4s;
+  -moz-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.fadeIn.second {
+  -webkit-animation-delay: 0.6s;
+  -moz-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.fadeIn.third {
+  -webkit-animation-delay: 0.8s;
+  -moz-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+.fadeIn.fourth {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+/* Simple CSS3 Fade-in Animation */
+.underlineHover:after {
+  display: block;
+  left: 0;
+  bottom: -10px;
+  width: 0;
+  height: 2px;
+  background-color: #56baed;
+  content: "";
+  transition: width 0.2s;
+}
+
+.underlineHover:hover {
+  color: #0d0d0d;
+}
+
+.underlineHover:hover:after{
+  width: 100%;
+}
+
+
+
+/* OTHERS */
+
+*:focus {
+    outline: none;
+} 
+
+#icon {
+  width:60%;
+}

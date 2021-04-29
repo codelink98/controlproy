@@ -34,6 +34,8 @@ CREATE TABLE `usuario` (
   `masa_muscular` float DEFAULT NULL,
   PRIMARY KEY (`nombre`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+INSERT INTO `usuario` VALUES ('Martin Torres Becerra', 23, 'M', 90, 1.67, 38.7, 28, 'obesidad', 8);
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

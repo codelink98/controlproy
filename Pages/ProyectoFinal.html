@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>ProyectoFinal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="C:\Users\osval_000\Desktop\Web page/CSS/style.css">
+</head>
+<body class="color">
+  <input type="checkbox" id="check">
+  <label for="check">
+  <i class="glyphicon glyphicon-menu-hamburger" id="btn"></i>
+  <i class="glyphicon glyphicon-remove" id="cancel"></i>
+</label>
+<nav class="sidebar">
+  <header>Menu</header>
+
+    <ul>
+
+    <li><a href="../index.html"><i class="glyphicon glyphicon-home"></i> Home</a></li>
+    <li><a href="PostgreSQL.html"><i class="material-icons">attachment</i>PostgreSQLi</a></li>
+    <li><a href="MySQL.html"><i class="material-icons">attachment</i>MySQL</a></li>
+    <li><a href="MicrosoftSQL.html"><i class="material-icons">attachment</i>MicrosoftSQL</a></li>
+    <li><a href="info.html"><i class="material-icons">favorite</i>Paráfrasis</a></li>
+    <li><a href="InstallPostgreSQL.html"><i class="material-icons">computer</i>Instalación</a></li>
+    <li><a href="TABLES.html"><i class="material-icons">computer</i>Tablas BD</a></li>
+    <li><a href="Obtencion.html"><i class="material-icons">attachment</i>Obtencion Act 9</a></li>
+    <li><a href="Act11.html"><i class="material-icons">attachment</i>Transformacion</a></li>
+    <li><a href="Mokup.html"><i class="material-icons">cloud</i>Mokup page</a></li>
+    <li><a href="Act23y24.html"><i class="material-icons">cloud</i>Operadores y Funciones</a></li>
+
+    </ul>
+      </nav>
+    <section>
+      <div class="wrapper-text">
+        <p class="SGBD">Reporte proyecto final</p>
+        <p class="subtitulo">Ruben Osvaldo Rubio Gonzalez | Seminario de bases de datos</p>
+        <p class="subtitulo">Reporte final de sistema individual:</p>
+        <p>Nombre del sistema: Arte Frausto</p>
+        <p>Este sistema permite llevar y administrar una galeria, cuenta con los apartados de inventario, vender, vendidos, empleados y exposiciones.</p>
+        <p class="subtitulo">Tecnologias utilizadas para la creacion de este sistema:</p>
+        <p>El sistema esta basado en web principalmente, corre nativamente en el localhost port 5000 y se ejecuta desde el navegador.</p>
+        <ul>
+            <li>1- Python Flask: Para el BackEnd del sistema se utilizo el framework "FLASK" basado en python por su facilidad de uso y codigo facil de leer.</li>
+            <li>2- Jinja 2: Jinja es un motor de plantillas HTML que facilita la muestra de informacion actualizada en el navegador</li>
+            <li>3- HTML y Bootswatch: Para el FrontEnd y estructura de la pagina, sus vistas y estilo se utilizaron HTML y Bootswatch que es un framework basado en bootstrap que contiene
+                estilos predefinidos.
+            </li>
+            <li>4- MariaDB: Como motor de base de datos se utlizo MariaDB igual que durante el curso de esta clase.</li>
+        </ul>
+        <h2>Vistas del sistema:</h2>
+        <h3>Index/Vista principal</h3>
+        <p>Aqui se muestra el inventario, el menu para agregar nuevas obras, las opciones para manipular los datos del inventario asi como la opcion de buscar dentro del inventario</p>
+        <div class="Image-Page">
+            <p><img src="../Images/vista i 1.PNG" alt="Vista 1" width="1000"></p>
+        </div>
+        <div class="Image-Page">
+            <p><img src="../Images/vista i 2.PNG" alt="Vista 1" width="1000"></p>
+        </div>
+        <div class="Image-Page">
+            <p><img src="../Images/vista i 3.PNG" alt="Vista 1" width="1000"></p>
+        </div>
+        <div class="Image-Page">
+            <p><img src="../Images/vista i 4.PNG" alt="Vista 1" width="1000"></p>
+        </div>
+        <h3>Vender</h3>
+        <p>Aqui se muestran el inventario y el apartado buscar al igual que en la parte anterior pero ahora cada entrada cuenta con un boton "vender" que envia a la pantalla de facturacion
+            para realizar la venta de la obra.
+        </p>
+        <div class="Image-Page">
+            <p><img src="../Images/vista i 5.PNG" alt="Vista 1" width="1000"></p>
+        </div>
+        <div class="Image-Page">
+            <p><img src="../Images/vista i 6.PNG" alt="Vista 1" width="1000"></p>
+        </div>
+        <h3>Vendidos</h3>
+        <p>Aqui se muestra el historial de obras vendidas y un menu de busqueda en el historial asi como debajo de el historial se muestran el historial de facturas con los datos y un menu
+            de buscar entre ellas.</p>
+        <div class="Image-Page">
+            <p><img src="../Images/vista i 7.PNG" alt="Vista 1" width="1000"></p>
+        </div>
+        <div class="Image-Page">
+            <p><img src="../Images/vista i 8.PNG" alt="Vista 1" width="1000"></p>
+        </div>
+        <h3>Empleados</h3>
+        <p>En la ventana de empleados se muestran los empleados registrados asi como un menu para modificarlos, eliminarlos o agregar nuevos.</p>
+        <div class="Image-Page">
+            <p><img src="../Images/vista i 9.PNG" alt="Vista 1" width="1000"></p>
+        </div>
+        <h3>Exposiciones</h3>
+        <p>Aqui se muestran las obras que estan actualmente en exposicion asi como las que se pueden agregar.</p>
+        <div class="Image-Page">
+            <p><img src="../Images/vista i 10.PNG" alt="Vista 1" width="1000"></p>
+        </div>
+        <div class="Image-Page">
+            <p><img src="../Images/vista i 11.PNG" alt="Vista 1" width="1000"></p>
+        </div>
+        <h3>Sistema Funcionando</h3>
+        <div class="Image-Page">
+            <p><iframe width="760" height="515" src="https://www.youtube.com/embed/SAJ0QLi6hiM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+        </div>
+        <h3>Querys de la base de datos</h3>
+        <div class="Image-Page">
+            <p><img src="../Images/query i 1.PNG" alt="Query 1" width="600"></p>
+        </div>
+        <div class="Image-Page">
+            <p><img src="../Images/query i 2.PNG" alt="Vista 1" width="1200"></p>
+        </div>
+        <h3>Codigo BackEnd</h3>
+        <div class="Image-Page">
+            <p><img src="../Images/codigo i 1.PNG" alt="codigo" width="900"></p>
+        </div>
+        <div class="Image-Page">
+            <p><img src="../Images/codigo i 2.PNG" alt="codigo" width="900"></p>
+        </div>
+        <div class="Image-Page">
+            <p><img src="../Images/codigo i 3.PNG" alt="codigo" width="900"></p>
+        </div>
+        <div class="Image-Page">
+            <p><img src="../Images/codigo i 4.PNG" alt="codigo" width="900"></p>
+        </div>
+        <div class="imagenes">
+            <p><img src="../Images/codigo i 5.PNG" alt="codigo" width="900"></p>
+        </div>
+        <div class="Image-Page">
+            <p><img src="../Images/codigo i 6.PNG" alt="codigo" width="900"></p>
+        </div>
+        <p>Este es el sistema de mi Galeria Arte.</p>
+        <p class="SGBD">¡Hasta luego!</p>
+      </div>
+    </section>
+
+</body>
+</html>
