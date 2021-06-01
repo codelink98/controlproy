@@ -1,7 +1,7 @@
 <?php
  $dbhost = "127.0.0.1:3306";
  $dbuser = "codelink";
- $dbpass = "Martinn1";
+ $dbpass = "Martinn1.";
  $db = "nutrifit";
 
  // Create connection
