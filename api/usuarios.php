@@ -21,7 +21,7 @@ if ($result->num_rows > 0) {
     // output data of each row
     $response["status"] = "true";
     while($row = $result->fetch_assoc()) {
-        var_dump($row);
+        echo json_encode($row);
     }
     } else {
     $response["status"] = "false";
@@ -30,6 +30,5 @@ if ($result->num_rows > 0) {
 
 
 $conn->close();
-echo json_encode($response);
 
 ?>

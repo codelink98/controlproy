@@ -25,7 +25,7 @@ if (isset($_GET['email']) && $_GET['email']!="") {
         // output data of each row
         $response["status"] = "true";
         while($row = $result->fetch_assoc()) {
-          echo json_encode($row);
+          
         }
       } else {
         $response["status"] = "false";
@@ -37,5 +37,6 @@ if (isset($_GET['email']) && $_GET['email']!="") {
 	$response["message"] = "No data reached";
 }
 $conn->close();
+echo json_encode($response);
 
 ?>
