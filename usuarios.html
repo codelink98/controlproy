@@ -31,8 +31,8 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
-          <li><a href="usuarios.html">Usuarios</a></li>
+          <li><a href="home.html">Home <span class="sr-only">(current)</span></a></li>
+          <li class="active"><a href="#">Usuarios</a></li>
           <li><a href="dietas.html">Dietas</a></li>
           <li><a href="rutinas.html">Rutinas</a></li>
         </ul>
@@ -43,20 +43,19 @@
   <body>
 
     <div class="page-header">
-      <h1>Bienvenido Coach</h1>
+      <h1>Usuarios</h1>
     </div>
-    <div class="wrapper fadeInDown">
-      <div id="formContent">
-        <!-- Tabs Titles -->
-    
-        <!-- Icon -->
-        <div class="fadeIn first">
-          <img src="Images/loginImage.png" id="icon" alt="User Icon" />
-        </div>
 
-    
-      </div>
-    </div>
+    <ul class="list-group">
+        <script>
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "http://143.198.98.137/api/usuarios.php", true);
+            xhr.onload = function(){
+                console.log(xhr.responseText);
+            };
+            xhr.send();
+        </script>
+    </ul>
 
   </body>
 </html>
