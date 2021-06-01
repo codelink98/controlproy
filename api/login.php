@@ -1,5 +1,5 @@
 <?php
- $dbhost = "127.0.0.1:3306";
+ $dbhost = "localhost";
  $dbuser = "codelink";
  $dbpass = "Martinn1.";
  $db = "nutrifit";
