@@ -1,21 +1,3 @@
-function loginAdmin() {
-
-    if(document.getElementById("login").value === "martintb@live.com.mx" && document.getElementById("password").value === "Nutrifit10") {
-
-        alert("Usuario correcto!")
-        setCookie("usuario", "Martin Torres Becerra", 1);
-        window.location = "home.html";
-
-    } else {
-        alert("Datos incorrectos, intente de nuevo");
-        location.reload();
-    }
-    
-     
-
-}
-
-console.log("index js loaded")
 
 function setCookie(cname, cvalue, exdays) {
     var d = new Date();
@@ -39,3 +21,22 @@ function getCookie(cname) {
     }
     return "";
   }
+  
+function loginAdmin() {
+
+    if(document.getElementById("login").value === "martintb@live.com.mx" && document.getElementById("password").value === "Nutrifit10") {
+
+        alert("Usuario correcto!")
+        setCookie("usuario", "Martin Torres Becerra", 1);
+        window.location = "home.html";
+
+    } else {
+        alert("Datos incorrectos, intente de nuevo");
+        location.reload();
+    }
+    
+     
+
+}
+
+console.log("index js loaded")
