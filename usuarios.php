@@ -49,7 +49,10 @@
     <ul class="list-group">
       <?php
         $homepage = file_get_contents('http://143.198.98.137/api/usuarios.php');
-        echo $homepage;
+        echo $homepage[1];
+
+
+
       ?>
     </ul>
 
@@ -57,4 +60,3 @@
 </html>
 
 
-INSERT INTO `usuario` VALUES ('Jose Antonio Marrion Martinez','pikachu','antonio@live.com.mx', 21, 'M', 50, 1.60, 19.531, 20, 'NA', 9);
