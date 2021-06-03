@@ -1,3 +1,7 @@
+<?php
+   require '/path/to/vendor/autoload.php';
+?>
+
 <!DOCTYPE html>
 
 <html lang="en" dir="ltr">
@@ -46,8 +50,11 @@
       <h1>Usuarios</h1>
     </div>
 
-    <ul class="list-group">
-    </ul>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+    Select image to upload:
+    <input type="file" name="fileToUpload" id="fileToUpload">
+    <input type="submit" value="Upload Image" name="submit">
+    </form>
 
   </body>
 </html>
