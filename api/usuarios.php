@@ -20,7 +20,7 @@ if ($result->num_rows > 0) {
     // output data of each row
     $response["status"] = "true";
     while($row = $result->fetch_assoc()) {
-        echo json_encode($row);
+        echo json_decode($row);
     }
     } else {
     $response["status"] = "false";

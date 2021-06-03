@@ -55,3 +55,6 @@
 
   </body>
 </html>
+
+
+INSERT INTO `usuario` VALUES ('Jose Antonio Marrion Martinez','pikachu','antonio@live.com.mx', 21, 'M', 50, 1.60, 19.531, 20, 'NA', 9);
