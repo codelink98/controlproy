@@ -49,7 +49,7 @@
     <ul class="list-group">
       <?php
         $homepage = file_get_contents('http://143.198.98.137/api/usuarios.php');
-        echo $homepage[1];
+        echo $homepage;
 
 
 

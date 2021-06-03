@@ -13,6 +13,8 @@
 
 header("Content-Type:application/json");
 
+$users[] = array();
+
 $query = 'SELECT * FROM `usuario`;';
 $result = $conn->query($query);
 
@@ -20,7 +22,7 @@ if ($result->num_rows > 0) {
     // output data of each row
     $response["status"] = "true";
     while($row = $result->fetch_assoc()) {
-        echo json_encode($row);
+        array_push($users, json_encode($row));
     }
     } else {
     $response["status"] = "false";
