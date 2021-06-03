@@ -1,5 +1,5 @@
 <?php
-   require '/path/to/vendor/autoload.php';
+   require 'vendor/autoload.php';
 ?>
 
 <!DOCTYPE html>
