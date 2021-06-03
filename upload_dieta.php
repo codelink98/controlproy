@@ -9,7 +9,7 @@
         'region'      => 'us-west-2'
     ]);
 
-    Upload a publicly accessible file. The file size and type are determined by the SDK.
+    //Upload a publicly accessible file. The file size and type are determined by the SDK.
     try {
         $s3->putObject([
             'Bucket' => 'nutrifit-dieta-app',
