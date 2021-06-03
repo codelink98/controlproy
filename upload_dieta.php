@@ -14,7 +14,7 @@
         $s3->putObject([
             'Bucket' => 'nutrifit-dieta-app',
             'Key'    => $_FILES["fileToUpload"]["name"],
-            'Body'   => $_FILES["fileToUpload"]["tmp_name"],
+            'Body'   => fopen($_FILES["fileToUpload"]["tmp_name"], 'r'),
             'ACL'    => 'public-read',
         ]);
     } catch (Aws\S3\Exception\S3Exception $e) {
