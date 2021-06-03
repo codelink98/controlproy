@@ -33,8 +33,8 @@
         <ul class="nav navbar-nav">
           <li><a href="home.html">Home <span class="sr-only">(current)</span></a></li>
           <li class="active"><a href="#">Usuarios</a></li>
-          <li><a href="dietas.html">Dietas</a></li>
-          <li><a href="rutinas.html">Rutinas</a></li>
+          <li><a href="dietas.php">Dietas</a></li>
+          <li><a href="rutinas.php">Rutinas</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->

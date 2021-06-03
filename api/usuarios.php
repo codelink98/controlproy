@@ -14,7 +14,6 @@
 header("Content-Type:application/json");
 
 $query = 'SELECT * FROM `usuario`;';
-echo $query;
 $result = $conn->query($query);
 
 if ($result->num_rows > 0) {

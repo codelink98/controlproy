@@ -31,10 +31,10 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+          <li><a href="home.html">Home <span class="sr-only">(current)</span></a></li>
           <li><a href="usuarios.php">Usuarios</a></li>
           <li><a href="dietas.php">Dietas</a></li>
-          <li><a href="rutinas.php">Rutinas</a></li>
+          <li class="active"><a href="#">Rutinas</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -43,20 +43,11 @@
   <body>
 
     <div class="page-header">
-      <h1>Bienvenido Coach</h1>
+      <h1>Usuarios</h1>
     </div>
-    <div class="wrapper fadeInDown">
-      <div id="formContent">
-        <!-- Tabs Titles -->
-    
-        <!-- Icon -->
-        <div class="fadeIn first">
-          <img src="Images/loginImage.png" id="icon" alt="User Icon" />
-        </div>
 
-    
-      </div>
-    </div>
+    <ul class="list-group">
+    </ul>
 
   </body>
 </html>
