@@ -26,7 +26,6 @@ function loginAdmin() {
 
     if(document.getElementById("login").value === "martintb@live.com.mx" && document.getElementById("password").value === "Nutrifit10") {
 
-        alert("Usuario correcto!")
         setCookie("usuario", "Martin Torres Becerra", 1);
         window.location = "home.html";
 
