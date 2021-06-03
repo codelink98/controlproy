@@ -17,6 +17,7 @@
             'Body'   => fopen($_FILES["fileToUpload"]["tmp_name"], 'r'),
             'ACL'    => 'public-read',
         ]);
+        echo "ok"
     } catch (Aws\S3\Exception\S3Exception $e) {
         echo "There was an error uploading the file.\n";
     }
