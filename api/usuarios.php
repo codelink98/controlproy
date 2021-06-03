@@ -22,7 +22,7 @@ if ($result->num_rows > 0) {
     // output data of each row
     $response["status"] = "true";
     while($row = $result->fetch_assoc()) {
-        array_push($users, json_encode($row));
+        array_push($users,$row);
     }
     } else {
     $response["status"] = "false";
@@ -31,6 +31,6 @@ if ($result->num_rows > 0) {
 
 
 $conn->close();
-echo json_decode($users);
+echo json_encode($users);
 
 ?>
