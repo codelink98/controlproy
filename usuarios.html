@@ -47,14 +47,10 @@
     </div>
 
     <ul class="list-group">
-        <script>
-            var xhr = new XMLHttpRequest();
-            xhr.open("GET", "http://143.198.98.137/api/usuarios.php", true);
-            xhr.onload = function(){
-                console.log(xhr.responseText);
-            };
-            xhr.send();
-        </script>
+      <?php
+        $homepage = file_get_contents('http://143.198.98.137/api/usuarios.php');
+        echo $homepage;
+      ?>
     </ul>
 
   </body>
