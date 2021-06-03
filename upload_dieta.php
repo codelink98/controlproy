@@ -10,16 +10,16 @@
     ]);
 
     // Upload a publicly accessible file. The file size and type are determined by the SDK.
-    try {
-        $s3->putObject([
-            'Bucket' => 'nutrifit-dieta-app',
-            'Key'    => $_FILES["fileToUpload"]["name"],
-            'Body'   => $_FILES["fileToUpload"],
-            'ACL'    => 'public-read',
-        ]);
-    } catch (Aws\S3\Exception\S3Exception $e) {
-        echo "There was an error uploading the file.\n";
-    }
+    // try {
+    //     $s3->putObject([
+    //         'Bucket' => 'nutrifit-dieta-app',
+    //         'Key'    => $_FILES["fileToUpload"]["name"],
+    //         'Body'   => $_FILES["fileToUpload"],
+    //         'ACL'    => 'public-read',
+    //     ]);
+    // } catch (Aws\S3\Exception\S3Exception $e) {
+    //     echo "There was an error uploading the file.\n";
+    // }
             
-    var_dump($_FILES["fileToUpload"]["name"])
+    var_dump($_FILES["fileToUpload"])
 ?> 
