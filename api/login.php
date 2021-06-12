@@ -16,7 +16,9 @@ header("Content-Type:application/json");
 if (isset($_GET['email']) && $_GET['email']!="") {
 
 	$email = $_GET['email'];
-	$query = 'SELECT * FROM `usuario` WHERE email="' . $email . '";';
+	$pass = $_GET['password'];
+
+	$query = 'SELECT * FROM `usuario` WHERE email="{$email}" AND password="{$pass}";';
     //$query = 'SELECT * FROM `usuario`;';
     echo $query;
 	$result = $conn->query($query);
