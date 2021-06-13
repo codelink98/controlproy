@@ -19,24 +19,29 @@ if (isset($_GET['email']) && $_GET['email']!="") {
 	$pass = $_GET['password'];
 
 	$query = "SELECT * FROM `usuario` WHERE email='{$email}' AND password='{$pass}';";
-    //$query = 'SELECT * FROM `usuario`;';
-    echo $query;
+
 	$result = $conn->query($query);
 
     if ($result->num_rows > 0) {
+
         // output data of each row
         $response["status"] = "true";
-        while($row = $result->fetch_assoc()) {
-          
-        }
+        echo "<script> window.location = 'home.html'; </script>";
+        exit;
+
       } else {
+
         $response["status"] = "false";
-	    $response["message"] = "No customer(s) found!";
+	      $response["message"] = "No customer(s) found!";
+        echo "<script> window.location = 'index.html'; </script>";
+        exit;
       }
 
 } else {
 	$response["status"] = "false";
 	$response["message"] = "No data reached";
+  echo "<script> window.location = 'index.html'; </script>";
+  exit;
 }
 $conn->close();
 echo json_encode($response);
