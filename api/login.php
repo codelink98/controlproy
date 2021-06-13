@@ -26,7 +26,7 @@ if (isset($_GET['email']) && $_GET['email']!="") {
 
         // output data of each row
         $response["status"] = "true";
-        echo "<script> window.location = 'home.html'; </script>";
+        echo '<script> window.location = "home.html"; </script>';
         exit;
 
       } else {
