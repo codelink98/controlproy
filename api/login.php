@@ -24,7 +24,7 @@ if (isset($_GET['email']) && $_GET['email']!="") {
 
     if ($result->num_rows > 0) {
 
-        echo "<script> window.location = '../home.html'; </script>";
+        header("Location: /../home.html");
         exit;
 
       } else {
