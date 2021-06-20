@@ -29,13 +29,13 @@ if (isset($_GET['email']) && $_GET['email']!="") {
 
       } else {
 
-        echo "<script> window.location = '../index.html'; </script>";
+        header("Location: /../index.html");
         exit;
 
       }
 
 } else {
-  echo "<script> window.location = '../index.html'; </script>";
+  header("Location: /../index.html");
   exit;
 }
 $conn->close();
