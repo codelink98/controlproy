@@ -24,26 +24,19 @@ if (isset($_GET['email']) && $_GET['email']!="") {
 
     if ($result->num_rows > 0) {
 
-        // output data of each row
-        $response["status"] = "true";
-        echo '<script> window.location = "home.html"; </script>';
+        echo "<script> window.location = '../home.html'; </script>";
         exit;
 
       } else {
 
-        $response["status"] = "false";
-	      $response["message"] = "No customer(s) found!";
-        echo "<script> window.location = 'index.html'; </script>";
+        echo "<script> window.location = '../index.html'; </script>";
         exit;
+
       }
 
 } else {
-	$response["status"] = "false";
-	$response["message"] = "No data reached";
-  echo "<script> window.location = 'index.html'; </script>";
+  echo "<script> window.location = '../index.html'; </script>";
   exit;
 }
 $conn->close();
-echo json_encode($response);
-
 ?>
