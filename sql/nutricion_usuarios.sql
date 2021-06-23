@@ -16,28 +16,32 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `desayuno`
+-- Table structure for table `usuarios`
 --
 
-DROP TABLE IF EXISTS `desayuno`;
+DROP TABLE IF EXISTS `usuarios`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `desayuno` (
-  `ID` int NOT NULL AUTO_INCREMENT,
-  `principal` varchar(20) DEFAULT NULL,
-  `complememnto` varchar(20) DEFAULT NULL,
-  `bebida` varchar(20) DEFAULT NULL,
-  PRIMARY KEY (`ID`)
+CREATE TABLE `usuarios` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(50) DEFAULT NULL,
+  `password` varchar(20) DEFAULT NULL,
+  `email` varchar(20) DEFAULT NULL,
+  `edad` int DEFAULT NULL,
+  `sexo` varchar(1) DEFAULT NULL,
+  `enfermedades` varchar(80) DEFAULT NULL,
+  `tipo` varchar(15) DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `desayuno`
+-- Dumping data for table `usuarios`
 --
 
-LOCK TABLES `desayuno` WRITE;
-/*!40000 ALTER TABLE `desayuno` DISABLE KEYS */;
-/*!40000 ALTER TABLE `desayuno` ENABLE KEYS */;
+LOCK TABLES `usuarios` WRITE;
+/*!40000 ALTER TABLE `usuarios` DISABLE KEYS */;
+/*!40000 ALTER TABLE `usuarios` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -49,4 +53,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-04-27 13:05:13
+-- Dump completed on 2021-06-22 19:56:08

@@ -16,28 +16,34 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `cena`
+-- Table structure for table `datos`
 --
 
-DROP TABLE IF EXISTS `cena`;
+DROP TABLE IF EXISTS `datos`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `cena` (
-  `ID` int NOT NULL AUTO_INCREMENT,
-  `principal` varchar(20) DEFAULT NULL,
-  `complememnto` varchar(20) DEFAULT NULL,
-  `bebida` varchar(20) DEFAULT NULL,
-  PRIMARY KEY (`ID`)
+CREATE TABLE `datos` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `id_usuario` int DEFAULT NULL,
+  `cintura` float DEFAULT NULL,
+  `abdomen` float DEFAULT NULL,
+  `peso` float DEFAULT NULL,
+  `estatura` float DEFAULT NULL,
+  `grasa` float DEFAULT NULL,
+  `masa_muscular` float DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `id_usuario` (`id_usuario`),
+  CONSTRAINT `datos_ibfk_1` FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `cena`
+-- Dumping data for table `datos`
 --
 
-LOCK TABLES `cena` WRITE;
-/*!40000 ALTER TABLE `cena` DISABLE KEYS */;
-/*!40000 ALTER TABLE `cena` ENABLE KEYS */;
+LOCK TABLES `datos` WRITE;
+/*!40000 ALTER TABLE `datos` DISABLE KEYS */;
+/*!40000 ALTER TABLE `datos` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -49,4 +55,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-04-27 13:05:14
+-- Dump completed on 2021-06-22 19:56:09
