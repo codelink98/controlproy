@@ -23,7 +23,7 @@ DROP TABLE IF EXISTS `usuarios`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `usuarios` (
-  `id` int NOT NULL AUTO_INCREMENT,
+  `id` int AUTO_INCREMENT,
   `nombre` varchar(50) DEFAULT NULL,
   `password` varchar(20) DEFAULT NULL,
   `email` varchar(20) DEFAULT NULL,
@@ -54,3 +54,5 @@ UNLOCK TABLES;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 -- Dump completed on 2021-06-22 19:56:08
+
+/*INSERT INTO `usuarios` VALUES (1,'Martin Torres Becerra','empoleon','martintb@live.com.mx', 23, 'M', 'Obesidad', 'Admin');*/
