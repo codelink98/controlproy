@@ -46,9 +46,6 @@
       if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
       } 
-
-      $id = $_GET['id'];
-
       $query = "SELECT * FROM `usuarios`;";
 
       $result = $conn->query($query);
