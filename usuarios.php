@@ -100,10 +100,10 @@
           <label for="masa_muscular">Masa muscular</label>
           <input type="text"  id="masa_muscular" name="masa_muscular">
    
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
 
-    </div>
+      </div>
 
   </body>
 </html>

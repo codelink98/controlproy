@@ -621,12 +621,12 @@ main{
 }
 
 .formulario {
-  position:fixed;
-  margin: 250px;
+  position:fixed !important;
+  margin: 250px !important;
 }
 
 label {
-  
+
 }
 
 input {
