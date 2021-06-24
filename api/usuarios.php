@@ -15,7 +15,7 @@ header("Content-Type:application/json");
 
 $users[] = array();
 
-$query = 'SELECT * FROM `usuario`;';
+$query = 'SELECT * FROM `usuarios`;';
 $result = $conn->query($query);
 
 if ($result->num_rows > 0) {

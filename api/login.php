@@ -18,7 +18,7 @@ if (isset($_GET['email']) && $_GET['email']!="") {
 	$email = $_GET['email'];
 	$pass = $_GET['password'];
 
-	$query = "SELECT * FROM `usuario` WHERE email='{$email}' AND password='{$pass}';";
+	$query = "SELECT * FROM `usuarios` WHERE email='{$email}' AND password='{$pass}';";
 
 	$result = $conn->query($query);
 
