@@ -32,43 +32,9 @@
   </header>
 
   <body>
-
-  <?php
-
-    $dbhost = "localhost";
-    $dbuser = "codelink";
-    $dbpass = "Martinn1.";
-    $db = "nutrifit";
-
-    // Create connection
-    $conn = new mysqli($dbhost, $dbuser, $dbpass, $db);
-    // Check connection
-    if ($conn->connect_error) {
-      die("Connection failed: " . $conn->connect_error);
-    } 
-
-    header("Content-Type:application/json");
-
-    $id = $_GET['id'];
-
-    $query = "SELECT * FROM `usuarios` WHERE id='{$id}';";
-
-	  $result = $conn->query($query);
-
-    if ($result->num_rows > 0) {
-      while($row = $result->fetch_assoc()) {
-        echo "id: " . $row["id"]. " - email: " . $row["email"];
-      }
-    } 
-
-    $conn->close();
-
-  ?>
-
     <div class="page-header">
       <h1>Usuario</h1>
-  </div>
-
+    </div>
   </body>
 </html>
 
