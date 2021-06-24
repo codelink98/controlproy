@@ -25,18 +25,18 @@ if (isset($_GET['email']) && $_GET['email']!="") {
     if ($result->num_rows > 0) {
 
         header("Location: /../home.html");
-        exit;
+        
 
       } else {
 
         header("Location: /../index.html");
-        exit;
+        
 
       }
 
 } else {
   header("Location: /../index.html");
-  exit;
+  
 }
 $conn->close();
 ?>
