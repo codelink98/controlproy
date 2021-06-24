@@ -76,7 +76,7 @@
       $conn->close();
     ?>
 
-    <form>
+    <form action="/api/login.php">
       <div class="form-group">
         <label for="id">ID del usuario</label>
         <input type="number" class="form-control" id="id_user">
