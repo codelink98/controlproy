@@ -56,7 +56,9 @@
 	  $result = $conn->query($query);
 
     if ($result->num_rows > 0) {
-      var_dump($result);
+      while($row = $result->fetch_assoc()) {
+        echo "id: " . $row["id"]. " - email: " . $row["email"];
+      }
     } 
 
   ?>
