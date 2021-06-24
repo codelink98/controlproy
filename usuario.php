@@ -23,7 +23,7 @@
         </div>
           <ul >
             <li><a href="home.html">Home <span class="sr-only">(current)</span></a></li>
-            <li class="active" ><a href="#">Usuarios</a></li>
+            <li><a href="usuarios.php">Usuarios</a></li>
             <li><a href="dietas.php">Dietas</a></li>
             <li><a href="rutinas.php">Rutinas</a></li>
           </ul>
@@ -82,12 +82,12 @@
         while($row = $result->fetch_assoc()) {
           ?>
            <li class="list-group-item"><?php echo "Semana #" . $week?></li><br>
-           <li class="list-group-item"><?php echo "Cintura" . $row['cintura']?></li><br>
-           <li class="list-group-item"><?php echo "Abdomen" . $row['abdomen']?></li><br>
-           <li class="list-group-item"><?php echo "Peso" . $row['peso']?></li><br>
-           <li class="list-group-item"><?php echo "Estatura" . $row['estatura']?></li><br>
-           <li class="list-group-item"><?php echo "Grasa" . $row['grasa']?></li><br>
-           <li class="list-group-item"><?php echo "Masa muscular" . $row['masa_muscular']?></li><br>
+           <li class="list-group-item"><?php echo "Cintura: " . $row['cintura']?></li><br>
+           <li class="list-group-item"><?php echo "Abdomen: " . $row['abdomen']?></li><br>
+           <li class="list-group-item"><?php echo "Peso: " . $row['peso']?></li><br>
+           <li class="list-group-item"><?php echo "Estatura: " . $row['estatura']?></li><br>
+           <li class="list-group-item"><?php echo "Grasa: " . $row['grasa']?></li><br>
+           <li class="list-group-item"><?php echo "Masa muscular: " . $row['masa_muscular']?></li><br>
           <?php
           $week = $week + 1;
         }
