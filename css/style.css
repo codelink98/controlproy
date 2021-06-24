@@ -625,6 +625,10 @@ main{
   margin: 250px !important;
 }
 
+label {
+  margin: 20px;
+}
+
 input {
   width: 100%;
   padding: 12px 20px;
