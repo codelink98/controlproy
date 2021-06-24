@@ -76,10 +76,14 @@
         $conn->close();
       ?>
       </div>
-      <div class=formulario> 
+      
         <form action="/api/add_datos.php">
+
+        <div class="formulario">
+
           <label for="id">ID del usuario</label>
           <input type="number"  id="id_user" name="id_user">
+        </div>
 
           <div class="formulario">
             <label for="cintura">Cintura</label>
@@ -117,8 +121,6 @@
    
           <button type="submit" >Submit</button>
         </form>
-
-      </div>
 
   </body>
 </html>
