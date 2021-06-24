@@ -49,7 +49,7 @@
 
       $id = $_GET['id'];
 
-      $query = "SELECT * FROM `usuarios`;";
+      $query = "SELECT * FROM `usuarios`; where id='{$id}'";
 
       $result = $conn->query($query);
 
@@ -59,8 +59,36 @@
         <?php
         while($row = $result->fetch_assoc()) {
           ?>
-           <a href="<?php echo "usuario.php?id={$row['id']}"?>"><li class="list-group-item"> <?php echo $row['nombre']?></li></a>
+           <li class="list-group-item"><?php echo $row['nombre']?></li><br>
           <?php
+        }
+
+        ?>
+        </ul>
+        <?php
+
+      } 
+
+      $query = "SELECT * FROM `datos`; where id_usuario='{$id}'";
+
+      $result = $conn->query($query);
+
+      if ($result->num_rows > 0) {
+        ?>
+        <ul class="list-group">
+        <?php
+        $week = 1;
+        while($row = $result->fetch_assoc()) {
+          ?>
+           <li class="list-group-item"><?php echo "Semana #" . $week?></li><br>
+           <li class="list-group-item"><?php echo "Cintura" . $row['cintura']?></li><br>
+           <li class="list-group-item"><?php echo "Abdomen" . $row['abdomen']?></li><br>
+           <li class="list-group-item"><?php echo "Peso" . $row['peso']?></li><br>
+           <li class="list-group-item"><?php echo "Estatura" . $row['estatura']?></li><br>
+           <li class="list-group-item"><?php echo "Grasa" . $row['grasa']?></li><br>
+           <li class="list-group-item"><?php echo "Masa muscular" . $row['masa_muscular']?></li><br>
+          <?php
+          $week += 1;
         }
 
         ?>

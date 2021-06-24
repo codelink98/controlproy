@@ -53,7 +53,7 @@
 
       $id = $_GET['id'];
 
-      $query = "SELECT * FROM `usuarios`;";
+      $query = "SELECT * FROM `usuarios` WHERE tipo='User';";
 
       $result = $conn->query($query);
 
@@ -63,7 +63,7 @@
         <?php
         while($row = $result->fetch_assoc()) {
           ?>
-           <a href="<?php echo "usuario.php?id={$row['id']}"?>"><li class="list-group-item"> <?php echo $row['nombre']?></li></a>
+           <a href="<?php echo "usuario.php?id={$row['id']}"?>"><li class="list-group-item"> <?php echo $row['nombre']?></li></a><br>
           <?php
         }
 
