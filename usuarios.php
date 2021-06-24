@@ -83,7 +83,6 @@
        
           <label for="cintura">Cintura</label>
           <input type="text"  id="cintura" name="cintura">
-       
   
           <label for="abdomen">Abdomen</label>
           <input type="text" id="abdomen" name="abdomen">
@@ -100,7 +99,7 @@
           <label for="masa_muscular">Masa muscular</label>
           <input type="text"  id="masa_muscular" name="masa_muscular">
    
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" >Submit</button>
         </form>
 
       </div>
