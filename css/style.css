@@ -622,4 +622,13 @@ main{
 
 .formulario {
   position:fixed;
+  margin: 250px;
+}
+
+label {
+  
+}
+
+input {
+  width: 100%;
 }
