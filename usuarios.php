@@ -53,14 +53,24 @@
 
       $id = $_GET['id'];
 
-      $query = "SELECT * FROM `usuarios` WHERE id='{$id}';";
+      $query = "SELECT * FROM `usuarios`;";
 
       $result = $conn->query($query);
 
       if ($result->num_rows > 0) {
+        ?>
+        <ul class="list-group">
+        <?php
         while($row = $result->fetch_assoc()) {
-          echo "id: " . $row["id"]. " - email: " . $row["email"];
+          ?>
+           <a href="<?php echo "usuario.php?id={$row['id']}"?>"><li class="list-group-item"> <?php echo $row['nombre']?></li></a>
+          <?php
         }
+
+        ?>
+        </ul>
+        <?php
+
       } 
 
       $conn->close();
