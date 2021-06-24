@@ -76,52 +76,38 @@
         $conn->close();
       ?>
       </div>
-      
-        <form action="/api/add_datos.php">
-
+        
         <div class="formulario">
+        <form action="/api/add_datos.php">
 
           <label for="id">ID del usuario</label>
           <input type="number"  id="id_user" name="id_user">
-        </div>
 
-          <div class="formulario">
-            <label for="cintura">Cintura</label>
-            <input type="text"  id="cintura" name="cintura">
-          </div>
+          <label for="cintura">Cintura</label>
+          <input type="text"  id="cintura" name="cintura">
 
-          <div class="formulario">
 
-            <label for="abdomen">Abdomen</label>
-            <input type="text" id="abdomen" name="abdomen">
-          </div>
-       
-          <div class="formulario">
+          <label for="abdomen">Abdomen</label>
+          <input type="text" id="abdomen" name="abdomen">
+      
 
-            <label for="peso">Peso</label>
-            <input type="text"  id="peso" name="peso">
-          </div>
-     
-          <div class="formulario">
-
-            <label for="estatura">Estatura</label>
-            <input type="text"  id="estatura" name="estatura">
-          </div>
-
-          <div class="formulario">   
-            <label for="grasa">Grasa</label>
-            <input type="text"  id="grasa" name="grasa">
-          </div>
+          <label for="peso">Peso</label>
+          <input type="text"  id="peso" name="peso">
     
 
-          <div class="formulario">
-            <label for="masa_muscular">Masa muscular</label>
-            <input type="text"  id="masa_muscular" name="masa_muscular">
-          </div>
+          <label for="estatura">Estatura</label>
+          <input type="text"  id="estatura" name="estatura">
+
+          <label for="grasa">Grasa</label>
+          <input type="text"  id="grasa" name="grasa">
+  
+
+          <label for="masa_muscular">Masa muscular</label>
+          <input type="text"  id="masa_muscular" name="masa_muscular">
    
           <button type="submit" >Submit</button>
         </form>
-
+      </div>
   </body>
 </html>
 
