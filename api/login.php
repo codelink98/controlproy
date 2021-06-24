@@ -27,7 +27,7 @@ if (isset($_GET['email']) && $_GET['email']!="") {
       while($row = $result->fetch_assoc()) {
         if ($row['tipo'] == 'User') {
 
-          header("Location: /../home.html");
+          header("Location: /../usuario.php?id={$row['id']}");
 
         } else {
 
