@@ -47,10 +47,10 @@
         die("Connection failed: " . $conn->connect_error);
       } 
 
-      // $id = $_GET['id'];
-      $id = 3;
+      $id = $_GET['id'];
+      // $id = 3;
 
-      $query = "SELECT * FROM `usuarios`; where id='{$id}'";
+      $query = "SELECT * FROM `usuarios` where id='{$id}'";
 
       $result = $conn->query($query);
 
@@ -70,7 +70,7 @@
 
       } 
 
-      $query2 = "SELECT * FROM `datos`; where id_usuario='{$id}'";
+      $query2 = "SELECT * FROM `datos` where id_usuario='{$id}'";
 
       $result = $conn->query($query2);
 
