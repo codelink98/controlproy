@@ -26,15 +26,8 @@ if (isset($_GET['id_user']) && $_GET['id_user']!="") {
 	$query = "INSERT INTO `datos` (`id_usuario`, `cintura`, `abdomen`, `peso`, `estatura`, `grasa`, `masa_muscular`) VALUES ({$id}, {$cintura}, {$abdomen}, {$peso}, {$estatura}, ${grasa}, {$masa_muscular});";
 
 	$result = $conn->query($query);
+  header("Location: /../home.html");
 
-    if ($result->num_rows > 0) {
-
-        header("Location: /../home.html");
-        
-
-     
-
-  } 
   
 }
 $conn->close();
