@@ -24,8 +24,17 @@ if (isset($_GET['email']) && $_GET['email']!="") {
 
     if ($result->num_rows > 0) {
 
-        header("Location: /../home.html");
-        
+      while($row = $result->fetch_assoc()) {
+        if ($row['tipo'] == 'User') {
+
+          header("Location: /../home.html");
+
+        } else {
+
+          header("Location: /../home.html");
+
+        }
+      } 
 
       } else {
 

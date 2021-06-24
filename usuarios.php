@@ -33,85 +33,87 @@
 
   <body>
 
-    <div class="page-header">
+    <div class="cuerpo">
       <h1>Usuarios</h1>
-    </div>
+    
 
-    <?php
+      <?php
 
-      $dbhost = "localhost";
-      $dbuser = "codelink";
-      $dbpass = "Martinn1.";
-      $db = "nutrifit";
+        $dbhost = "localhost";
+        $dbuser = "codelink";
+        $dbpass = "Martinn1.";
+        $db = "nutrifit";
 
-      // Create connection
-      $conn = new mysqli($dbhost, $dbuser, $dbpass, $db);
-      // Check connection
-      if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-      } 
+        // Create connection
+        $conn = new mysqli($dbhost, $dbuser, $dbpass, $db);
+        // Check connection
+        if ($conn->connect_error) {
+          die("Connection failed: " . $conn->connect_error);
+        } 
 
-      $id = $_GET['id'];
+        $id = $_GET['id'];
 
-      $query = "SELECT * FROM `usuarios` WHERE tipo='User';";
+        $query = "SELECT * FROM `usuarios` WHERE tipo='User';";
 
-      $result = $conn->query($query);
+        $result = $conn->query($query);
 
-      if ($result->num_rows > 0) {
-        ?>
-        <ul class="list-group">
-        <?php
-        while($row = $result->fetch_assoc()) {
+        if ($result->num_rows > 0) {
           ?>
-           <a href="<?php echo "usuario.php?id={$row['id']}"?>"><li class="list-group-item"> <?php echo $row['nombre']?></li></a><br>
+          <ul class="list-group">
           <?php
-        }
+          while($row = $result->fetch_assoc()) {
+            ?>
+            <a href="<?php echo "usuario.php?id={$row['id']}"?>"><li class="list-group-item"> <?php echo $row['nombre']?></li></a><br>
+            <?php
+          }
 
-        ?>
-        </ul>
-        <?php
+          ?>
+          </ul>
+          <?php
 
-      } 
+        } 
 
-      $conn->close();
-    ?>
+        $conn->close();
+      ?>
 
-    <form action="/api/add_datos.php">
-      <div class="form-group">
-        <label for="id">ID del usuario</label>
-        <input type="number" class="form-control" id="id_user" name="id_user">
-      </div>
-      <div class="form-group">
-        <label for="cintura">Cintura</label>
-        <input type="text" class="form-control" id="cintura" name="cintura">
-      </div>
-      </div>
-      <div class="form-group">
-        <label for="abdomen">Abdomen</label>
-        <input type="text" class="form-control" id="abdomen" name="abdomen">
-      </div>
-      </div>
-      <div class="form-group">
-        <label for="peso">Peso</label>
-        <input type="text" class="form-control" id="peso" name="peso">
-      </div>
-      </div>
-      <div class="form-group">
-        <label for="estatura">Estatura</label>
-        <input type="text" class="form-control" id="estatura" name="estatura">
-      </div>
-      </div>
-      <div class="form-group">
-        <label for="grasa">Grasa</label>
-        <input type="text" class="form-control" id="grasa" name="grasa">
-      </div>
-      </div>
-      <div class="form-group">
-        <label for="masa_muscular">Masa muscular</label>
-        <input type="text" class="form-control" id="masa_muscular" name="masa_muscular">
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+      <form action="/api/add_datos.php">
+        <div class="form-group">
+          <label for="id">ID del usuario</label>
+          <input type="number" class="form-control" id="id_user" name="id_user">
+        </div>
+        <div class="form-group">
+          <label for="cintura">Cintura</label>
+          <input type="text" class="form-control" id="cintura" name="cintura">
+        </div>
+        </div>
+        <div class="form-group">
+          <label for="abdomen">Abdomen</label>
+          <input type="text" class="form-control" id="abdomen" name="abdomen">
+        </div>
+        </div>
+        <div class="form-group">
+          <label for="peso">Peso</label>
+          <input type="text" class="form-control" id="peso" name="peso">
+        </div>
+        </div>
+        <div class="form-group">
+          <label for="estatura">Estatura</label>
+          <input type="text" class="form-control" id="estatura" name="estatura">
+        </div>
+        </div>
+        <div class="form-group">
+          <label for="grasa">Grasa</label>
+          <input type="text" class="form-control" id="grasa" name="grasa">
+        </div>
+        </div>
+        <div class="form-group">
+          <label for="masa_muscular">Masa muscular</label>
+          <input type="text" class="form-control" id="masa_muscular" name="masa_muscular">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+    </div>
 
   </body>
 </html>
