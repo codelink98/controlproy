@@ -63,6 +63,8 @@
 
     $conn->close();
 
+    exit;
+
   ?>
 
     <div class="page-header">
