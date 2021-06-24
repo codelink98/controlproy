@@ -80,9 +80,11 @@
         <form action="/api/add_datos.php">
           <label for="id">ID del usuario</label>
           <input type="number"  id="id_user" name="id_user">
-       
-          <label for="cintura">Cintura</label>
-          <input type="text"  id="cintura" name="cintura">
+
+          <div class="formulario">
+            <label for="cintura">Cintura</label>
+            <input type="text"  id="cintura" name="cintura">
+          </div>
   
           <label for="abdomen">Abdomen</label>
           <input type="text" id="abdomen" name="abdomen">
