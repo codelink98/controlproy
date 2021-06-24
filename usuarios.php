@@ -85,21 +85,35 @@
             <label for="cintura">Cintura</label>
             <input type="text"  id="cintura" name="cintura">
           </div>
-  
-          <label for="abdomen">Abdomen</label>
-          <input type="text" id="abdomen" name="abdomen">
+
+          <div class="formulario">
+
+            <label for="abdomen">Abdomen</label>
+            <input type="text" id="abdomen" name="abdomen">
+          </div>
        
-          <label for="peso">Peso</label>
-          <input type="text"  id="peso" name="peso">
+          <div class="formulario">
+
+            <label for="peso">Peso</label>
+            <input type="text"  id="peso" name="peso">
+          </div>
      
-          <label for="estatura">Estatura</label>
-          <input type="text"  id="estatura" name="estatura">
+          <div class="formulario">
+
+            <label for="estatura">Estatura</label>
+            <input type="text"  id="estatura" name="estatura">
+          </div>
+
+          <div class="formulario">   
+            <label for="grasa">Grasa</label>
+            <input type="text"  id="grasa" name="grasa">
+          </div>
     
-          <label for="grasa">Grasa</label>
-          <input type="text"  id="grasa" name="grasa">
-    
-          <label for="masa_muscular">Masa muscular</label>
-          <input type="text"  id="masa_muscular" name="masa_muscular">
+
+          <div class="formulario">
+            <label for="masa_muscular">Masa muscular</label>
+            <input type="text"  id="masa_muscular" name="masa_muscular">
+          </div>
    
           <button type="submit" >Submit</button>
         </form>
