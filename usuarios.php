@@ -79,36 +79,36 @@
     <form action="/api/login.php">
       <div class="form-group">
         <label for="id">ID del usuario</label>
-        <input type="number" class="form-control" id="id_user">
+        <input type="number" class="form-control" id="id_user" name="id_user">
       </div>
       <div class="form-group">
         <label for="cintura">Cintura</label>
-        <input type="text" class="form-control" id="cintura">
+        <input type="text" class="form-control" id="cintura" name="cintura">
       </div>
       </div>
       <div class="form-group">
         <label for="abdomen">Abdomen</label>
-        <input type="text" class="form-control" id="abdomen">
+        <input type="text" class="form-control" id="abdomen" name="abdomen">
       </div>
       </div>
       <div class="form-group">
         <label for="peso">Peso</label>
-        <input type="text" class="form-control" id="peso">
+        <input type="text" class="form-control" id="peso" name="peso">
       </div>
       </div>
       <div class="form-group">
         <label for="estatura">Estatura</label>
-        <input type="text" class="form-control" id="estatura">
+        <input type="text" class="form-control" id="estatura" name="estatura">
       </div>
       </div>
       <div class="form-group">
         <label for="grasa">Grasa</label>
-        <input type="text" class="form-control" id="grasa">
+        <input type="text" class="form-control" id="grasa" name="grasa">
       </div>
       </div>
       <div class="form-group">
         <label for="masa_muscular">Masa muscular</label>
-        <input type="text" class="form-control" id="masa_muscular">
+        <input type="text" class="form-control" id="masa_muscular" name="masa_muscular">
       </div>
       <button type="submit" class="btn btn-primary">Submit</button>
     </form>
