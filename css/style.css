@@ -621,7 +621,7 @@ main{
 }
 
 .formulario {
-  position:fixed !important;
+  position:absolute;
   margin: 250px !important;
 }
 
