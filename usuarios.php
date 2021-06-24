@@ -77,40 +77,29 @@
       ?>
       </div>
       <div class=formulario> 
-      <form action="/api/add_datos.php">
-        <div>
+        <form action="/api/add_datos.php">
           <label for="id">ID del usuario</label>
           <input type="number"  id="id_user" name="id_user">
-        </div>
-        <div>
+       
           <label for="cintura">Cintura</label>
           <input type="text"  id="cintura" name="cintura">
-        </div>
-        </div>
-        <div>
+       
+  
           <label for="abdomen">Abdomen</label>
           <input type="text" id="abdomen" name="abdomen">
-        </div>
-        </div>
-        <div >
+       
           <label for="peso">Peso</label>
           <input type="text"  id="peso" name="peso">
-        </div>
-        </div>
-        <div >
+     
           <label for="estatura">Estatura</label>
           <input type="text"  id="estatura" name="estatura">
-        </div>
-        </div>
-        <div >
+    
           <label for="grasa">Grasa</label>
           <input type="text"  id="grasa" name="grasa">
-        </div>
-        </div>
-        <div >
+    
           <label for="masa_muscular">Masa muscular</label>
           <input type="text"  id="masa_muscular" name="masa_muscular">
-        </div>
+   
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
 
