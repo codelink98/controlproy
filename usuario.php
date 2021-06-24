@@ -47,7 +47,8 @@
         die("Connection failed: " . $conn->connect_error);
       } 
 
-      $id = $_GET['id'];
+      // $id = $_GET['id'];
+      $id = 3;
 
       $query = "SELECT * FROM `usuarios`; where id='{$id}'";
 
