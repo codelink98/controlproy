@@ -47,8 +47,6 @@
         die("Connection failed: " . $conn->connect_error);
       } 
 
-      header("Content-Type:application/json");
-
       $id = $_GET['id'];
 
       $query = "SELECT * FROM `usuarios` WHERE id='{$id}';";
