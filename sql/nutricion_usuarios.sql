@@ -55,4 +55,4 @@ UNLOCK TABLES;
 
 -- Dump completed on 2021-06-22 19:56:08
 
-/*INSERT INTO `usuarios` VALUES (1,'Martin Torres Becerra','empoleon','martintb@live.com.mx', 23, 'M', 'Obesidad', 'Admin');*/
+INSERT INTO `usuarios` (`nombre`, `password`, `email`, `edad`, `sexo`, `enfermedades`, `tipo`) VALUES ('Maria Gonzalez Robles','123tamarindo','maria@live.com.mx', 28, 'F', '', 'User');

@@ -235,11 +235,12 @@ ol{
 a {
 
     text-decoration: none;
+    
     color: #6D95CE;
 }
 a:hover {
-
-    color: white;
+    text-decoration:gold;
+    color: rgb(0, 0, 0);
 }
 
 
@@ -577,4 +578,32 @@ input[type=text]:placeholder, input[type=password]::placeholder {
 
 #icon {
   width:60%;
+}
+
+header {
+  width: 100%;
+  height: 60%;
+ 
+  
+}
+
+header nav ul{
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+header nav ul li{
+  margin: 10px;
+  font-size: medium;
+  
+}
+main{
+ 
+  width: 100%;
+  height: 50%;
+  margin-top: none;
+  text-align: center;
+  position: absolute;
+  top: 100px;
 }

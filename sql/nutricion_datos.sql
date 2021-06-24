@@ -56,3 +56,7 @@ UNLOCK TABLES;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 -- Dump completed on 2021-06-22 19:56:09
+
+/*
+INSERT INTO `datos` (`id_usuario`, `cintura`, `abdomen`, `peso`, `estatura`, `grasa`, `masa_muscular`) VALUES (2, 100, 90, 92, 173, 20, 8);
+*/
