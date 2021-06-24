@@ -49,50 +49,29 @@
 
       $id = $_GET['id'];
 
-      $query = "SELECT * FROM `usuarios` WHERE id='{$id}';";
+      $query = "SELECT * FROM `usuarios`;";
 
       $result = $conn->query($query);
 
       if ($result->num_rows > 0) {
+        ?>
+        <ul class="list-group">
+        <?php
         while($row = $result->fetch_assoc()) {
-          echo "id: " . $row["id"]. " - email: " . $row["email"];
+          ?>
+           <a href="<?php echo "usuario.php?id={$row['id']}"?>"><li class="list-group-item"> <?php echo $row['nombre']?></li></a>
+          <?php
         }
+
+        ?>
+        </ul>
+        <?php
+
       } 
 
       $conn->close();
 
     ?>
-
-    <table class="table">
-      <thead>
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">First</th>
-          <th scope="col">Last</th>
-          <th scope="col">Handle</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td>@fat</td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td>Larry</td>
-          <td>the Bird</td>
-          <td>@twitter</td>
-        </tr>
-      </tbody>
-    </table>
 
   </body>
 </html>
