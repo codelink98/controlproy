@@ -69,9 +69,9 @@
 
       } 
 
-      $query = "SELECT * FROM `datos`; where id_usuario='{$id}'";
+      $query2 = "SELECT * FROM `datos`; where id_usuario='{$id}'";
 
-      $result = $conn->query($query);
+      $result = $conn->query($query2);
 
       if ($result->num_rows > 0) {
         ?>
@@ -88,7 +88,7 @@
            <li class="list-group-item"><?php echo "Grasa" . $row['grasa']?></li><br>
            <li class="list-group-item"><?php echo "Masa muscular" . $row['masa_muscular']?></li><br>
           <?php
-          $week += 1;
+          $week = $week + 1;
         }
 
         ?>
